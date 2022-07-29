@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
+import style from './Contato.module.css'
 
 function Contato() {
 	return (
 		<motion.div
-			className="container text-center"
+			className={style.textCenter}
 			initial={{ x: -2000 }}
 			animate={{ x: 0 }}
 			exit={{ x: 2000, marginBottom: '1000px' }}
 			transition={{ duration: '0.8' }}
 		>
 			<h1>Contact us</h1>
-
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio mollitia
 				in minima architecto odit sunt enim quidem blanditiis voluptates,
